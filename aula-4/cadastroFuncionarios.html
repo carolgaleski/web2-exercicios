@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Cadastro de funcionários</title>
+</head>
+<body>
+
+    <h1> Cadastro de funcionários: </h1>
+
+    <form id="form-funcionario" method="POST"> 
+        <label>Nome: <input type="text" id="nome" required></label><br>
+        <label>ENdereço: <input type="text" id="endereço" required></label><br>           
+        <label>Matrícula: <input type="text" id="matricula" required></label><br>
+        <label> Cargo: 
+            <select id="cargo" required>
+                <option value="gerente">Gerente</option>
+                <option value="analista">Analista</option>
+            </select>
+        </label> <br>
+
+
+        <div id="campo-senioridade" style="display:none;">
+            <label>Senioridade: <input type="text" id="senioridade"></label> <br>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+
+    <h2>Funcionários cadastrados: </h2>
+    <ul id="lista-funcionarios"></ul>
+
+
+    <script type="module" src="interface.js"></script>
+
+</body>
+
+</html>
